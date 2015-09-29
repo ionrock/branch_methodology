@@ -19,3 +19,7 @@ Using Branches and Merges
 One ides is to use some long lived branches that are constantly merged
 into the "release" branch. The idea is that you merge "upstream" and
 then merge your "org" branch to create a new release head.
+
+
+The org branch needs needs to be constantly rebased on top of master,
+which should be getting merged with upstream on a cadence.
