@@ -23,7 +23,7 @@ then merge your "org" branch to create a new release head.
 Terms
 -----
 
- - "upstream" - The project's primary tracking repo. For example,
+- "upstream" - The project's primary tracking repo. For example,
    https://github.com/openstack/designate
 
  - "org" - The organizations specific packages. Pull requests and
@@ -52,3 +52,6 @@ Here is the process to getting a repo ready for building an artifact.
    $ git merge upstream
    $ git merge org
    $ git tag $release
+
+The org branch needs needs to be constantly rebased on top of master,
+which should be getting merged with upstream on a cadence.
